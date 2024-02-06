@@ -1,3 +1,5 @@
+//test case - determines if actual equals expected
+
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
