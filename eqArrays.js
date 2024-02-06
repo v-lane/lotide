@@ -10,7 +10,7 @@ const assertEqual = function(actual, expected) {
 //implement function 'eqArrays' which takes in twp arrays and 
 //returns true or false, based on a perfect match
 
-let eqArrays = function(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   
   //check if length same; if not, arrays are not same, return false
   if (arr1.length !== arr2.length) {
