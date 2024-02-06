@@ -1,3 +1,4 @@
+//test case - determines if actual equals expected
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
@@ -7,6 +8,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//returns furst element of an array
 const head = function(array) {
   return array[0];
 }
