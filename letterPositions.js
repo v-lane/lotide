@@ -39,13 +39,11 @@ const letterPositions = function(sentence) {
     let key = sentence[i];
 
     if (key === " ") {
-      i++;
-      key = sentence[i];
-    };
+      continue;
+    }
 
     if (!results[key]) {
-      results[key] = [];
-      results[key].push(i);
+      results[key] = [i];
       
     } else {
       results[key].push(i);
