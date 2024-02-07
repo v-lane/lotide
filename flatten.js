@@ -31,9 +31,7 @@ const flatten = function(array) {
 
   for (let i of array) {
     if (Array.isArray(i)) {
-      for (let j of i) {
-        newArray.push(j);
-      }
+      newArray = newArray.concat(i);
     } else {
       newArray.push(i);
     }
