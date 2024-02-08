@@ -30,9 +30,14 @@ const eqObjects = function(object1, object2) {
   const keyArr1 = Object.keys(object1);
   const keyArr2 = Object.keys(object2);
   //check sames number of keys
-
   if (keyArr1.length !== keyArr2.length) {
     return false;
+  }
+
+  for (let key of keyArr1) {
+    if (!object2[key]) {
+      return false;
+    }
   }
 
   //check if key values same for each
@@ -51,8 +56,6 @@ const eqObjects = function(object1, object2) {
 };
 
 
-
-
 //tests
 
 const shirtObject = { color: "red", size: "medium" };
@@ -66,5 +69,5 @@ const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
 assertEqual(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject),true); // => true
 
-const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
+const longSleeveMultiColorShirtObject = { size: "medium", sleeveLength: "long" };
 assertEqual(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject),false); // => false
