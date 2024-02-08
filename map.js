@@ -39,12 +39,12 @@ const map = function(array, callback) {
 
 const results1 = map(words, word => word[0]);
 const results2 = map([], word => word[0]);
-const results3 = map([1, 2, 3], word => word[0]);
+const results3 = map([1, 2, 3], num => num * 2);
 
 //tests
 assertArraysEqual(results1,['g', 'c', 't', 'm', 't']);
 assertArraysEqual(results2,[]);
-assertArraysEqual(results3,[undefined, undefined, undefined,]);
+assertArraysEqual(results3,[2, 4, 6]);
 
 
 
