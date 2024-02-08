@@ -32,7 +32,7 @@ const map = function(array, callback) {
 
   for (let item of array) {
     results.push(callback(item));
-  }  
+  }
   return results;
 };
 
