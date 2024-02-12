@@ -48,4 +48,4 @@ assertArraysEqual(results3,[2, 4, 6]);
 
 
 
-
+module.exports = map;

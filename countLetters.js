@@ -35,3 +35,4 @@ assertEqual(countLetters([1, 2, 3]), undefined);
 assertEqual(countLetters(12345), undefined);
 assertEqual(countLetters(true), undefined);
 
+module.exports = countLetters;

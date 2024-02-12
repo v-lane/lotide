@@ -41,3 +41,5 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sciFi");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "THE WIRE"), undefined);
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Simpsons"), undefined);
 assertEqual(findKeyByValue(bestTVShowsByGenre, 12), undefined);
+
+module.exports = findKeyByValue;

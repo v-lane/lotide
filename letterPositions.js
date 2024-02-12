@@ -62,4 +62,4 @@ assertArraysEqual(results["b"],[6]);
 assertArraysEqual(results["y"],[7]);
 
 
-
+module.exports = letterPositions;

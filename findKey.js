@@ -42,4 +42,4 @@ assertEqual(findKey(objectToTest, x => x.stars === "tree"),undefined);
 
 
 
-
+module.exports = findKey;

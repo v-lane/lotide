@@ -60,3 +60,5 @@ assertArraysEqual(without([1, 2, 3],[]),[1, 2, 3]);
 assertArraysEqual(without(["1", 2, 3],[1]),["1", 2, 3]);
 assertArraysEqual(without([],[]),[]);
 assertArraysEqual(without([],[1]),[]);
+
+module.exports = without;
