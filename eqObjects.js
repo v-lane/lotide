@@ -29,11 +29,15 @@ const eqArrays = function(arr1, arr2) {
 const eqObjects = function(object1, object2) {
   const keyArr1 = Object.keys(object1);
   const keyArr2 = Object.keys(object2);
+
+
+
   //check sames number of keys
   if (keyArr1.length !== keyArr2.length) {
     return false;
   }
 
+  // check if keys are same
   for (let key of keyArr1) {
     if (!object2[key]) {
       return false;
@@ -59,7 +63,7 @@ const eqObjects = function(object1, object2) {
 //tests
 
 const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
+const anotherShirtObject = { size: "medium", color: "red"};
 assertEqual(eqObjects(shirtObject , anotherShirtObject),true); // => true
 
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
