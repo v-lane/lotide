@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@v_lane/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "This library was published for learning purposes. It was created and published as part of my learnings at Lighthouse Labs",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/v-lane/lotide.git"
   },
-  "author": "",
+  "author": "Victoria Lane",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/v-lane/lotide/issues"
