@@ -1,5 +1,5 @@
 const eqArrays = function(arr1, arr2) {
-  
+
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -35,7 +35,7 @@ const middle = function(array) {
   if (Number.isInteger(midpoint)) {
     midElement.push(array[midpoint - 1]);
     midElement.push(array[midpoint]);
-    return midElement
+    return midElement;
   } else {
     //find middle ceil & floor, return 2 elements
     midElement.push(array[Math.floor(midpoint)]);

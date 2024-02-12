@@ -1,4 +1,4 @@
-//implement function 'eqArrays' which takes in twp arrays and 
+//implement function 'eqArrays' which takes in twp arrays and
 //returns true or false, based on a perfect match
 
 const eqArrays = function(arr1, arr2) {

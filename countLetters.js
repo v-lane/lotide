@@ -26,12 +26,12 @@ const countLetters = function(sentence) {
     }
   }
   return lettersCount;
-}
+};
 
-assertEqual(countLetters("Happy Birthday Baby")["h"],1);
-assertEqual(countLetters("Happy Birthday Baby")["B"],2);
-assertEqual(countLetters(),undefined);
-assertEqual(countLetters([1, 2, 3]),undefined);
-assertEqual(countLetters(12345),undefined);
-assertEqual(countLetters(true),undefined);
+assertEqual(countLetters("Happy Birthday Baby")["h"], 1);
+assertEqual(countLetters("Happy Birthday Baby")["B"], 2);
+assertEqual(countLetters(), undefined);
+assertEqual(countLetters([1, 2, 3]), undefined);
+assertEqual(countLetters(12345), undefined);
+assertEqual(countLetters(true), undefined);
 
